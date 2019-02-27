@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Press Start 2P', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	background-color: #10120E;
+	color: white;
+	flex-direction: column
+}
+h1{
+
+	padding: 10px;
+}p{
+	color: #FF133D
+}
+.opacidad{
+	animation-name: opacidad;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite
+}
+
+.fondo{
+	animation-name: fondo;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+@keyframes fondo{
+	from{
+		color: #FF1300
+	}
+	to{
+		opacity: #FF1300
+	}
+}
+
+@keyframes opacidad{
+	from{
+		opacity: .1
+	}
+	to{
+		opacity: 1
+	}
+}
+
